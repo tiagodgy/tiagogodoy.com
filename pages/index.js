@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 import ShortcutHome from '../components/ShortcutHome'
 import { PostMain, PostContent, PostContainer } from '../components/Post'
 import { Wrapper } from '../components/Wrapper'
-//import ModelThree from '../components/ModelThree'
+import ModelThree from '../components/ModelThree'
 
 export async function getStaticProps() {
   return {
@@ -30,22 +30,20 @@ export default function Index(props) {
         <meta content="https://tiagogodoy.com" property="og:url" />
         <meta content={`https://tiagogodoy.com${image}`} property="og:image" />
       </Head>
-
       <Navbar />
       <Home>
         <PostContent>
           <PostContainer>
-            <div>
-              <h1>{title}</h1>
-              <p>
-                <strong>Cybersecurity & Software Engineering
-                </strong><br />
-                {description}
-              </p>
-              <ShortcutHome />
-            </div>
+            <h1>{title}</h1>
+            <p>
+              <strong>Cybersecurity & Software Engineering</strong>
+              <br />
+              {description}
+            </p>
+            <ShortcutHome />
           </PostContainer>
         </PostContent>
+        <ModelThree />
       </Home>
       <Footer />
     </Wrapper>
@@ -56,5 +54,7 @@ const Home = styled(PostMain, {
   alignItems: 'center',
   display: 'flex',
   margin: '0 auto',
-  '@bp2': { width: 800 },
+  flexDirection: 'column',
+  '@bp2': { width: 800, flexDirection: 'row', paddingBottom: '0' },
+  paddingBottom: '0',
 })

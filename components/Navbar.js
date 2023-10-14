@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { motion, AnimateSharedLayout } from 'framer-motion'
 import { useKBar } from 'kbar'
-import Image from "next/image"
+import Image from 'next/image'
 
 export default function Navbar() {
   const router = useRouter()
@@ -24,8 +24,7 @@ export default function Navbar() {
   return (
     <AnimateSharedLayout>
       <Header>
-        <Link href="/" passHref>
-          <ButtonLogo as="a">
+        <ButtonLogo as="a" href="/" passHref>
           <Image
             alt="Logo"
             src="/favicon.svg"
@@ -33,8 +32,7 @@ export default function Navbar() {
             height="32"
             priority
           />
-          </ButtonLogo>
-        </Link>
+        </ButtonLogo>
 
         <Nav>
           <List>
@@ -44,32 +42,30 @@ export default function Navbar() {
 
               return (
                 <li key={page}>
-                  <Link href={path} passHref>
-                    <Anchor>
-                      <NavContainer
-                        onHoverStart={() => setHovered(page)}
-                        onHoverEnd={() => setHovered('')}
-                        css={
-                          router.pathname == path
-                            ? {
-                                color: '$primary',
-                                '&::after': { opacity: 1 },
-                              }
-                            : ''
-                        }
-                      >
-                        {isHovered && (
-                          <NavHovered
-                            layoutId="nav"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                          />
-                        )}
-                        {page}
-                      </NavContainer>
-                    </Anchor>
-                  </Link>
+                  <Anchor href={path} passHref>
+                    <NavContainer
+                      onHoverStart={() => setHovered(page)}
+                      onHoverEnd={() => setHovered('')}
+                      css={
+                        router.pathname == path
+                          ? {
+                              color: '$primary',
+                              '&::after': { opacity: 1 },
+                            }
+                          : ''
+                      }
+                    >
+                      {isHovered && (
+                        <NavHovered
+                          layoutId="nav"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                        />
+                      )}
+                      {page}
+                    </NavContainer>
+                  </Anchor>
                 </li>
               )
             })}
@@ -144,8 +140,7 @@ const ButtonLogo = styled(ButtonHeader, {
   fontFamily: '$heading',
   display: 'flex',
   alignContent: 'center',
-  alignItems: 'center',   
-  
+  alignItems: 'center',
 })
 
 const Nav = styled('nav', {

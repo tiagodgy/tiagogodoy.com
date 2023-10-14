@@ -33,52 +33,35 @@ export default function Footer() {
 
   const renderAnchor = (link, index) => {
     if (link.url.startsWith('http')) {
-      return <Anchor key={index} href={link.url} target="_blank">
-        <Title>{link.title}</Title>
-        <Icon className={link.icon} />
-      </Anchor>
+      return (
+        <Anchor key={index} href={link.url} target="_blank">
+          <Title>{link.title}</Title>
+          <Icon className={link.icon} />
+        </Anchor>
+      )
     }
 
-    return <Link key={index} href={link.url} passHref>
-      <Anchor>
+    return (
+      <Anchor key={index} href={link.url}>
         <Title>{link.title}</Title>
         <Icon className={link.icon} />
       </Anchor>
-    </Link>
+    )
   }
 
-  return (
-    <Container>
-      <SubContainer>
-      {links.map(renderAnchor)}
-      </SubContainer>
-      <SubContainer>
-        <Credits>Forked from {" "} <Link href='https://github.com/tiagodgy/tiagogodoy.com' target='_blank'>Zeno Rocha</Link></Credits>
-      
-      </SubContainer>
-    </Container>
-    
-  )
+  return <Container>{links.map(renderAnchor)}</Container>
 }
 
 const Container = styled('footer', {
   background: '$background',
   display: 'flex',
-  flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  padding: '20px 0',
-})
-
-const SubContainer = styled('div', {
-  background: '$background',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
+  padding: '20px',
 })
 
 const Credits = styled('p', {
-  fontSize: '14px', 
+  fontSize: '13px',
 })
 
 const Icon = styled('i', {

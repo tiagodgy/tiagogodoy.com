@@ -16,6 +16,9 @@ export const PostContainer = styled('div', {
   margin: '0 auto',
   maxWidth: '760px',
   padding: '0 20px',
+  '@bp2': {
+    minWidth: '300px',
+  },
 })
 
 export const PostContent = styled('div', {
