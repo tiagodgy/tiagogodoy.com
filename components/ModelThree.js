@@ -2,10 +2,26 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { useLoader } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import { Suspense, useRef } from 'react'
+import { Suspense, useRef, useEffect, useState } from 'react'
 import { styled } from '../stitches.config'
 
 export default function ModelThree() {
+  const Model = () => {
+    const gltf = useLoader(GLTFLoader, '/static/ThreeDModels/earth/scene.gltf')
+    const modelRef = useRef()
+
+    let scaleNum = 2.7
+
+    useFrame(() => {
+      if (modelRef.current) {
+        // Rotate the model around the x-axis
+        modelRef.current.rotation.y += 0.002 // Adjust the rotation speed as needed
+      }
+    })
+
+    return <primitive ref={modelRef} object={gltf.scene} scale={scaleNum} />
+  }
+
   return (
     <Container>
       <Canvas>
@@ -20,26 +36,6 @@ export default function ModelThree() {
       </Canvas>
     </Container>
   )
-}
-
-const Model = () => {
-  const gltf = useLoader(GLTFLoader, '/static/ThreeDModels/earth/scene.gltf')
-  const modelRef = useRef()
-  const width = window.innerWidth
-  let scaleNum = 2.5
-
-  if (width > 800) {
-    scaleNum = 2.7
-  }
-
-  useFrame(() => {
-    if (modelRef.current) {
-      // Rotate the model around the x-axis
-      modelRef.current.rotation.y += 0.002 // Adjust the rotation speed as needed
-    }
-  })
-
-  return <primitive ref={modelRef} object={gltf.scene} scale={scaleNum} />
 }
 
 const Container = styled('div', {

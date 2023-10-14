@@ -1,6 +1,4 @@
-import Link from 'next/link'
 import { styled } from '../stitches.config'
-import { Wrapper } from './Wrapper'
 
 export default function Footer() {
   const links = [
@@ -10,24 +8,19 @@ export default function Footer() {
       icon: 'ri-mail-line',
     },
     {
-      title: 'Twitter',
-      url: 'https://twitter.com/zenorocha',
-      icon: 'ri-twitter-line',
-    },
-    {
       title: 'GitHub',
-      url: 'https://github.com/zenorocha',
+      url: 'https://github.com/tiagodgy',
       icon: 'ri-github-line',
     },
     {
       title: 'linkedin',
-      url: 'https://linkedin.com/in/zenorocha',
+      url: 'https://www.linkedin.com/in/tiago-godoy-0137811b9/',
       icon: 'ri-linkedin-line',
     },
     {
-      title: 'Instagram',
-      url: 'https://instagram.com/zenorocha',
-      icon: 'ri-instagram-line',
+      title: 'Youtube',
+      url: 'https://www.youtube.com/channel/UCz383XOzCyl6bIeHCtjFPSQ',
+      icon: 'ri-youtube-line',
     },
   ]
 

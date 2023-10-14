@@ -9,7 +9,7 @@ import Image from 'next/image'
 export default function Navbar() {
   const router = useRouter()
   const pages = [
-    'About',
+    'Sobre',
     'Articles',
     'Projects',
     'Talks',
