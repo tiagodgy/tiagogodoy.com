@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { motion, AnimateSharedLayout } from 'framer-motion'
 import { useKBar } from 'kbar'
+import Image from "next/image"
 
 export default function Navbar() {
   const router = useRouter()
@@ -24,7 +25,15 @@ export default function Navbar() {
     <AnimateSharedLayout>
       <Header>
         <Link href="/" passHref>
-          <ButtonLogo as="a">z</ButtonLogo>
+          <ButtonLogo as="a">
+          <Image
+            alt="Logo"
+            src="/favicon.svg"
+            width="32"
+            height="32"
+            priority
+          />
+          </ButtonLogo>
         </Link>
 
         <Nav>
@@ -116,7 +125,7 @@ const ButtonHeader = styled('div', {
   color: 'white',
   cursor: 'pointer',
   cursor: 'pointer',
-  height: '34px',
+  height: '40px',
   padding: '0 10px',
   transition: 'background $duration ease-in-out',
   '&:hover': { background: '$hover' },
@@ -133,6 +142,10 @@ const ButtonLogo = styled(ButtonHeader, {
   textDecoration: 'none',
   marginLeft: '12px',
   fontFamily: '$heading',
+  display: 'flex',
+  alignContent: 'center',
+  alignItems: 'center',   
+  
 })
 
 const Nav = styled('nav', {

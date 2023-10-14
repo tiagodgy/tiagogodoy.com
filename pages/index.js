@@ -5,13 +5,14 @@ import Footer from '../components/Footer'
 import ShortcutHome from '../components/ShortcutHome'
 import { PostMain, PostContent, PostContainer } from '../components/Post'
 import { Wrapper } from '../components/Wrapper'
+//import ModelThree from '../components/ModelThree'
 
 export async function getStaticProps() {
   return {
     props: {
-      title: 'Zeno Rocha',
-      description: 'Obsessed with developer experience',
-      image: '/static/images/home-bw.jpg',
+      title: 'Tiago Godoy',
+      description: 'Check out this cool 3D earth!',
+      image: '/static/images/home-bw.jpg', // Remember to edit this image
     },
   }
 }
@@ -26,8 +27,8 @@ export default function Index(props) {
         <meta content={title} property="og:title" />
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
-        <meta content="https://zenorocha.com" property="og:url" />
-        <meta content={`https://zenorocha.com${image}`} property="og:image" />
+        <meta content="https://tiagogodoy.com" property="og:url" />
+        <meta content={`https://tiagogodoy.com${image}`} property="og:image" />
       </Head>
 
       <Navbar />
@@ -37,8 +38,7 @@ export default function Index(props) {
             <div>
               <h1>{title}</h1>
               <p>
-                <strong>Founder & CEO at{' '}
-                  <a href="https://resend.com" target="blank">Resend</a>
+                <strong>Cybersecurity & Software Engineering
                 </strong><br />
                 {description}
               </p>

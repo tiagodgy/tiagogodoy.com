@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { styled } from '../stitches.config'
+import { Wrapper } from './Wrapper'
 
 export default function Footer() {
   const links = [
@@ -48,17 +49,36 @@ export default function Footer() {
 
   return (
     <Container>
+      <SubContainer>
       {links.map(renderAnchor)}
+      </SubContainer>
+      <SubContainer>
+        <Credits>Forked from {" "} <Link href='https://github.com/tiagodgy/tiagogodoy.com' target='_blank'>Zeno Rocha</Link></Credits>
+      
+      </SubContainer>
     </Container>
+    
   )
 }
 
 const Container = styled('footer', {
   background: '$background',
   display: 'flex',
+  flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
   padding: '20px 0',
+})
+
+const SubContainer = styled('div', {
+  background: '$background',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+})
+
+const Credits = styled('p', {
+  fontSize: '14px', 
 })
 
 const Icon = styled('i', {
