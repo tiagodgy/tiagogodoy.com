@@ -27,9 +27,9 @@ export async function getStaticProps() {
 
   return {
     props: {
-      title: 'Articles // Zeno Rocha',
-      tagline: 'Stories. Updates. Guides.',
-      image: '/static/images/articles-bw.jpg',
+      title: 'Artigos',
+      tagline: 'Notícias. Tutoriais.',
+      image: '/static/images/articles-bw.jpg', // alterar essa imagem
       primaryColor: 'yellow',
       secondaryColor: 'pink',
       featuredPosts,
@@ -38,7 +38,7 @@ export async function getStaticProps() {
   }
 }
 
-function Articles(props) {
+function Artigos(props) {
   const renderFeatured = () => {
     return props.featuredPosts.map((post, index) => {
       return (
@@ -73,7 +73,7 @@ function Articles(props) {
   }
 
   const { title, image } = props
-  const description = `Here you can find all the <strong>${props.allPosts.length} articles</strong> I wrote. You can read about web development, software engineering, and tech career in both English and Portuguese.`
+  const description = `Aqui você encontra todos os <strong>${props.allPosts.length} artigos</strong> que eu escrevi.`
 
   return (
     <>
@@ -89,10 +89,10 @@ function Articles(props) {
       <AnimateSharedLayout>
         <p dangerouslySetInnerHTML={{ __html: description }} />
 
-        <h2>Featured Articles</h2>
+        <h2>Em Destaque</h2>
         <FeaturedArticles>{renderFeatured()}</FeaturedArticles>
 
-        <h2>All Articles</h2>
+        <h2>Todos Artigos</h2>
         <ListGroup>{renderAll()}</ListGroup>
       </AnimateSharedLayout>
     </>
@@ -104,6 +104,6 @@ const FeaturedArticles = styled('div', {
   '@bp2': { display: 'flex', justifyContent: 'space-between' },
 })
 
-Articles.Layout = Base
+Artigos.Layout = Base
 
-export default Articles
+export default Artigos
