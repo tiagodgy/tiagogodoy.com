@@ -1,12 +1,13 @@
 import { Resend } from 'resend'
-const resend = new Resend(process.env.RESEND_API_KEY)
 import EmailTemplate from '../../components/EmailTemplate'
+
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export default async function sendEmail(req, res) {
   try {
     const data = req.body
 
-    await resend.sendEmail({
+    await resend.emails.send({
       from: 'tiagogodoy.com <website@tiagogodoy.com>',
       to: 'tiagogodoymoreira@gmail.com',
       replyTo: data.email,
