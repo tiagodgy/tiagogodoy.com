@@ -31,7 +31,7 @@ function Contact(props) {
       const isProd = process.env.NODE_ENV === 'production'
       const base = isProd ? 'https://tiagogodoy.com' : 'http://localhost:3000'
 
-      await fetch(`${base}/api/email`, {
+      await fetch(`${base}/api/email/sendEmail`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
