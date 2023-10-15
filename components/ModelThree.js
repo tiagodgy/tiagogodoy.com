@@ -17,7 +17,7 @@ export default function ModelThree() {
       }
     })
 
-    return <primitive ref={modelRef} object={gltf.scene} scale={2.7} />
+    return <primitive ref={modelRef} object={gltf.scene} scale={0.5} />
   }
 
   function Loader() {
@@ -31,6 +31,7 @@ export default function ModelThree() {
   return (
     <Container>
       <Canvas>
+        <ambientLight />
         <Suspense fallback={<Loader />}>
           <Model />
         </Suspense>
