@@ -1,19 +1,14 @@
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useLoader } from '@react-three/fiber'
-import { Html, useProgress } from '@react-three/drei'
+import { Html } from '@react-three/drei'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { Suspense, useRef } from 'react'
 import { styled } from '../stitches.config'
 
 export default function ModelThree() {
   const Model = () => {
-    const gltf = useLoader(
-      GLTFLoader,
-      '/static/ThreeDModels/earth/a_windy_day.glb'
-    )
     const modelRef = useRef()
-
-    let scaleNum = 2.7
+    const gltf = useLoader(GLTFLoader, '/static/ThreeDModels/earth/scene.gltf')
 
     useFrame(() => {
       if (modelRef.current) {
@@ -22,14 +17,13 @@ export default function ModelThree() {
       }
     })
 
-    return <primitive ref={modelRef} object={gltf.scene} scale={scaleNum} />
+    return <primitive ref={modelRef} object={gltf.scene} scale={2.7} />
   }
 
   function Loader() {
-    const { progress } = useProgress()
     return (
       <Html center>
-        <p style={{ textAlign: 'center' }}>Carregando... {progress}%</p>
+        <p style={{ textAlign: 'center' }}>Carregando...</p>
       </Html>
     )
   }
