@@ -12,7 +12,7 @@ export async function getStaticProps() {
     title: 'Projetos',
     tagline: 'Em Breve...',
     image: '/static/images/bot-microsoft-sd.jpg',
-    primaryColor: 'cyan',
+    primaryColor: 'yellow',
     secondaryColor: 'green',
   }
 

@@ -1,8 +1,8 @@
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useLoader } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
+import { Html, useProgress } from '@react-three/drei'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import { Suspense, useRef, useEffect, useState } from 'react'
+import { Suspense, useRef } from 'react'
 import { styled } from '../stitches.config'
 
 export default function ModelThree() {
@@ -25,16 +25,20 @@ export default function ModelThree() {
     return <primitive ref={modelRef} object={gltf.scene} scale={scaleNum} />
   }
 
+  function Loader() {
+    const { progress } = useProgress()
+    return (
+      <Html center>
+        <p style={{ textAlign: 'center' }}>Carregando... {progress}%</p>
+      </Html>
+    )
+  }
+
   return (
     <Container>
       <Canvas>
-        <Suspense fallback={null}>
+        <Suspense fallback={<Loader />}>
           <Model />
-          {/* <OrbitControls
-            enableZoom={false}
-            minPolarAngle={Math.PI / 3}
-            maxPolarAngle={Math.PI - Math.PI / 3}
-          /> */}
         </Suspense>
       </Canvas>
     </Container>

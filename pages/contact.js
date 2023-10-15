@@ -9,7 +9,7 @@ import { styled } from '../stitches.config'
 export async function getStaticProps() {
   const meta = {
     title: 'Contato',
-    tagline: 'Me envie um email. Responderei assim que possível.',
+    tagline: 'Me envie um email.',
     image: '/static/images/expert-xp.jpg',
     primaryColor: 'cyan',
     secondaryColor: 'green',
@@ -20,7 +20,7 @@ export async function getStaticProps() {
 
 function Contact(props) {
   const { title, image } = props
-  const description = `<strong>I love chatting</strong> with software engineers, tech founders, students, and creators. <strong>I'm a busy person</strong>, so I can't promise that I'll reply to your email right away, but I'll try my best to respond in a timely manner.`
+  const description = `<strong>Gostaria de entrar em contato comigo?</strong> Você pode fazer isso me enviando um email! Ou, fique a vontade para me seguir nas redes sociais e entrar em contato por lá.`
   const [isEmailSent, setIsEmailSent] = React.useState(undefined)
   const [showToast, setShowToast] = React.useState(false)
 
@@ -63,10 +63,10 @@ function Contact(props) {
 
       <Box>
         <p dangerouslySetInnerHTML={{ __html: description }} />
-        <h2>Send an email</h2>
+        <h2>Envie um email</h2>
         <Form onSubmit={onSendEmail}>
           <FormGroup>
-            <Label htmlFor="name">Name</Label>
+            <Label htmlFor="name">Nome</Label>
             <Input id="name" type="text" placeholder="James Bond" required />
           </FormGroup>
           <FormGroup>
@@ -79,16 +79,16 @@ function Contact(props) {
             />
           </FormGroup>
           <FormGroup>
-            <Label htmlFor="message">Message</Label>
+            <Label htmlFor="message">Mensagem</Label>
             <Textarea
               id="message"
-              placeholder="How can I help you?"
+              placeholder="Como posso te ajudar?"
               rows="4"
               required
             />
           </FormGroup>
           <FormGroup>
-            <Button type="submit">Send</Button>
+            <Button type="submit">Enviar</Button>
           </FormGroup>
         </Form>
 
