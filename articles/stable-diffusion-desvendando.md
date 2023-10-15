@@ -5,72 +5,54 @@ image: /static/img/posts/filosofo-sd.png
 date: '2023-07-20'
 ---
 
-As reported by [TechCrunch](https://techcrunch.com/2023/07/18/developer-focused-email-platform-resend-raises-3m/) and [PEGN](https://revistapegn.globo.com/startups/noticia/2023/07/resend-capta-us-3-milhoes-em-rodada-seed-com-y-combinator-e-investidores-anjo.ghtml) today, Resend just raised a $3M seed round.
+Você está pronto para desbravar um universo de possibilidades criativas com a ajuda da inteligência artificial? O Stable Diffusion é uma ferramenta revolucionária, baseada em difusão estável, que permite gerar imagens impressionantes de forma surpreendentemente fácil. Neste artigo, vamos te guiar em um tutorial completo sobre como instalar e executar o Stable Diffusion em seu sistema Windows 10 com uma GPU Nvidia.
 
-I wanted to take a moment to share Resend's vision for how we’re redefining email sending, and our mission to provide the ultimate developer experience.
+## Explorando o Stable Diffusion
 
-## We're growing fast
+Antes de mergulharmos na instalação, é importante entender o que torna o Stable Diffusion tão especial. Esse incrível modelo de ML baseado em difusão estável é projetado para preencher partes faltantes de uma imagem, utilizando técnicas avançadas de aprendizado de máquina, especialmente desenvolvidas para as poderosas GPUs Nvidia. Se você possui uma GPU compatível, esteja preparado para criar imagens deslumbrantes com a ajuda dessa poderosa ferramenta!
 
-Since launching in January, over 10,000 developers have signed up to Resend. We've sent over 7 million transactional emails, and we're just getting started.
+## Instalação
 
-Resend is already quietly powering some of the fastest growing companies. They're building everything from a [platform for artists to tell their story](https://resend.com/customers/layer) to an [investment product with data sourced from Nasdaq and S&P](https://resend.com/customers/fey).
+Para começar, a instalação do Stable Diffusion é simples e fácil:
 
-Our open source project, [React Email](https://react.email), just crossed 8,000 stars on GitHub, it has more than 80 contributors, and it's used by teams of all sizes.
+- **Download do Pacote:** Acesse o [repositório oficial do Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases/download/v1.0.0-pre/sd.webui.zip). O download do arquivo “sd.webui.zip” irá iniciar. Ao finalizar extraia o conteúdo para um local de sua escolha.
 
-Today we're also launching the [Resend Discord](https://resend.com/discord) to connect our community of developers.
+- **Atualização da Interface:** Dentro do diretório extraído, clique duas vezes no arquivo “update.bat”. Aguarde até que o processo seja concluído e, em seguida, feche a janela.
 
-<a href="https://resend.com/discord">
-  <figure>
-    <img src="/static/img/posts/resend-raises-3m-a.png" class="post-image-full" alt="Resend Discord">
-  </figure>
-</a>
+- **Iniciando a Interface:** Agora, clique duas vezes no arquivo “run.bat”. Na primeira execução, o Stable Diffusion fará o download de alguns arquivos adicionais, dependendo da qualidade de sua conexão de internet pode levar tempo para finalizar. Depois que tudo estiver instalado corretamente, você verá a mensagem “Running on local URL: http://127.0.0.1:7860“. Basta abrir esse link no navegador para acessar a interface gráfica do Stable Diffusion.
 
-## Our investors
+Agora, você está quase pronto para explorar todo o potencial da geração de imagens com o Stable Diffusion!
 
-To help us scale demand, we partnered with **Y Combinator** who funded 90+ billion dollar companies like Stripe, Airbnb, Docker, and many others.
+## Personalize sua Experiência: Baixando um Checkpoint
 
-We're also thrilled to have participation from **SV Angel** who backed world-class companies like GitHub, Slack, and OpenAI.
+Para garantir que essa ferramenta poderosa funcione perfeitamente para o seu estilo de arte, você precisa selecionar um “checkpoint”. Mas, o que exatamente é um checkpoint?
 
-<blockquote>
-  "I'm so excited to be involved with Resend! Developer experience is so important to build better products, and historically, that DX in building email has been... awful. I can't wait for that to change, and Resend is going to make it happen!"
-  
-  — Cassidy Williams
-</blockquote>
+Checkpoints são modelos pré-treinados, cuidadosamente desenvolvidos para atingir estilos de arte específicos, como animes ou realismo. Embora a instalação padrão do Stable Diffusion já inclua um checkpoint, você pode maximizar seus resultados escolhendo um que esteja alinhado com o estilo de arte que você deseja criar.
 
-For this seed round, we intentionally focused on raising money from founders and operators. Chances are you are already using the products they helped to create.
-
-- **Dylan Field** (founder of Figma)
-- **Guillermo Rauch** (founder of Vercel)
-- **Calvin French-Owen** (founder of Segment)
-- **Michael Grinich** (founder of WorkOS)
-- **Paul Copplestone** (founder of Supabase)
-- **David Cramer** (founder of Sentry)
-
-As well as individual investors like **Elad Gil**, **Lachy Groom**, and **Alana Goyal**.
-
-[See full list of investors](https://resend.com/about#investors)
-
-## Where we're going
-
-We're building a communications platform, and we're starting with email.
+Nesse artigo vamos utilizar o checkpoint RevAnimated que pode ser [baixado aqui](https://civitai.com/api/download/models/46846). Após o download, basta inserir o arquivo na pasta “models > Stable-diffusion” e recarregar os checkpoints na parte superior da interface gráfica.
 
 <figure>
-  <img src="/static/img/posts/resend-raises-3m-b.png" class="post-image-full" alt="Resend Dashboard">
+  <img src="/static/img/posts/pasta_stable_diffusion_ui_tutorial.png" alt="Tutorial Stable Difussion">
 </figure>
 
-When you look at all the biggest competitors in this space, you'll notice that they were all founded around 2009/2010, and they all have been acquired by now.
+<figure>
+  <img src="/static/img/posts/top_stable_diffusion_ui_tutorial.png" alt="Tutorial Stable Difussion">
+</figure>
 
-Because of that, it's common to see them only prioritizing enterprise requirements and optimizing for sales-led growth.
+## Gerando sua Primeira Imagem
 
-Nobody is building an exceptional developer experience. Nobody is trying to innovate. There isn’t a single developer-first email platform in the market today. We want to change that.
+Com o Stable Diffusion instalado e o checkpoint selecionado, é hora de dar vida às suas ideias e criar sua primeira imagem!
 
-We need to stop developing emails like 2010 and rethink how email can be done in 2023 and beyond. Email development needs a revamp. A renovation. Modernized for the way we build apps today.
+Preencha o campo de “prompt” com a descrição da imagem que você deseja em inglês e, em seguida, clique no botão “Generate”. Lembre-se de que o tempo para geração da imagem pode variar de acordo com o desempenho do seu hardware e as configurações selecionadas. Mas não se preocupe, pois o resultado certamente valerá a pena a espera! 
 
-Over the next couple months, we'll double-down on this vision and expand the way you can use Resend to communicate with your users.
+<figure>
+  <img src="/static/img/posts/final_stable_diffusion_ui_tutorial.png" alt="Tutorial Stable Difussion">
+</figure>
 
-## Get started
+## Finalizando com Criatividade
 
-- Start using Resend today: [resend.com/signup](https://resend.com/signup)
-- Join our community on [Discord](https://resend.com/discord)
-- Make sure to [star us on GitHub](https://github.com/resendlabs/react-email)
-- Follow us on [Twitter](https://twitter.com/resendlabs)
+Agora você está equipado com todas as ferramentas necessárias para explorar a criatividade através da geração de imagens com o poderoso Stable Diffusion. Lembre-se de experimentar diferentes prompts, checkpoints e configurações para descobrir a infinidade de possibilidades que a inteligência artificial pode oferecer à sua arte.
+
+Então, o que está esperando? Desperte o artista dentro de você e embarque nessa emocionante jornada pela imaginação, guiado pela inteligência artificial. Aproveite cada momento de criação e compartilhe suas obras-primas com o mundo!
+
+Seja bem-vindo ao universo do Stable Diffusion, onde a magia da IA encontra a arte da imaginação!
