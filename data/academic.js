@@ -1,6 +1,6 @@
 const academic = [
   {
-    jobTitle: 'Tecnólogo',
+    jobTitle: 'Tecnólogo em Defesa Cibernética',
     company: 'Faculdade XPe',
     companyUrl: '',
     startDate: '2022-10-01',

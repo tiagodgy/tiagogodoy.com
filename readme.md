@@ -104,5 +104,7 @@ A special thanks to Zeno Rocha, who made his website available on GitHub under t
 
 I thank Loic Norgeot for providing the 3D model of the Earth that is on the homepage. Without a doubt, one of the most amazing models I've found on Sketchfab.
 
+Legal Disclaimer: This work is based on "A Windy Day" (https://sketchfab.com/3d-models/a-windy-day-fb78f4cc938144e6902dd5cff354d525) by Loïc Norgeot (https://sketchfab.com/norgeotloic) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/).
+
 [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)
 [Contact](https://sketchfab.com/norgeotloic)

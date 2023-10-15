@@ -7,7 +7,10 @@ import { styled } from '../stitches.config'
 
 export default function ModelThree() {
   const Model = () => {
-    const gltf = useLoader(GLTFLoader, '/static/ThreeDModels/earth/scene.gltf')
+    const gltf = useLoader(
+      GLTFLoader,
+      '/static/ThreeDModels/earth/a_windy_day.glb'
+    )
     const modelRef = useRef()
 
     let scaleNum = 2.7
