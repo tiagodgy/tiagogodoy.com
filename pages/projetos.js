@@ -11,7 +11,7 @@ export async function getStaticProps() {
   const meta = {
     title: 'Projetos',
     tagline: 'Em Breve...',
-    image: '/static/images/projects-bw.jpg', //Alterar essa imagem
+    image: '/static/images/bot-microsoft-sd.jpg',
     primaryColor: 'cyan',
     secondaryColor: 'green',
   }

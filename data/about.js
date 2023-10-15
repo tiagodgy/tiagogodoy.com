@@ -7,14 +7,7 @@ const items = [
     location: 'São Paulo, Brasil',
   },
   {
-    jobTitle: 'Freelancer Software Developer',
-    company: 'TGY Equipamentos',
-    companyUrl: 'https://tgyequipamentos.com.br/',
-    startDate: '2020-06-22',
-    location: 'São Paulo, Brasil',
-  },
-  {
-    jobTitle: 'Software Developer',
+    jobTitle: 'Desenvolvedor C# & Python',
     company: 'SmartGateway',
     companyUrl: 'https://smartgateway.com.br/',
     startDate: '2021-08-01',

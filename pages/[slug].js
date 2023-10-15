@@ -9,13 +9,13 @@ function Post(props) {
     return <ErrorMessage code={props.errorCode} />
   }
 
-  const title = `${props.title} // Zeno Rocha`
+  const title = `${props.title}`
   const description = props.description || ''
-  const url = `https://zenorocha.com/${props.slug}`
+  const url = `https://tiagogodoy.com/${props.slug}`
   const date = new Date(props.date).toISOString()
   const image = props.image
-    ? `https://zenorocha.com${props.image}`
-    : 'https://zenorocha.com/static/images/home-opt.jpg'
+    ? `https://tiagogodoy.com${props.image}`
+    : 'https://tiagogodoy.com/static/images/home-opt.jpg'
 
   return (
     <>
@@ -33,7 +33,7 @@ function Post(props) {
       </Head>
 
       <ArticleJsonLd
-        authorName="Zeno Rocha"
+        authorName="Tiago Godoy"
         type="Blog"
         url={url}
         title={title}
@@ -64,7 +64,7 @@ export async function getStaticProps({ params }) {
     const content = await convertMarkdownToHtml(post.content || '')
 
     const isProd = process.env.NODE_ENV === 'production'
-    const base = isProd ? 'https://zenorocha.com' : 'http://localhost:3000'
+    const base = isProd ? 'https://tiagogodoy.com' : 'http://localhost:3000'
 
     if (isProd) {
       const viewsReq = await fetch(`${base}/api/views/${params.slug}`)

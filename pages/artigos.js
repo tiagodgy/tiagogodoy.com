@@ -29,7 +29,7 @@ export async function getStaticProps() {
     props: {
       title: 'Artigos',
       tagline: 'Notícias. Tutoriais.',
-      image: '/static/images/articles-bw.jpg', // alterar essa imagem
+      image: '/static/images/qrcode-sd.jpg', // alterar essa imagem
       primaryColor: 'yellow',
       secondaryColor: 'pink',
       featuredPosts,

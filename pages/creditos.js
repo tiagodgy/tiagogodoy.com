@@ -10,7 +10,7 @@ export async function getStaticProps() {
     description:
       'É importante reconhecer aqueles que disponibilizam seu tempo e recursos para criar conteúdo e disponibilizar de maneira gratuita.',
     tagline: 'Créditos.',
-    image: '/static/images/reminder-bw.jpg', // Alterar esse imagem
+    image: '/static/images/filosofo-sd.jpg',
     primaryColor: 'cyan',
     secondaryColor: 'green',
   }

@@ -1,8 +1,15 @@
-# zenorocha.com
+# tiagogodoy.com
 
 > My personal website <3
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fzenorocha%2Fzenorocha.com)
+## What I changed:
+
+- Upgraded Next.js to version 13.
+- Upgraded React to version 18.
+- Solved "Hydration" problems that occur in version 18 of React.
+- Added Three.js to the project.
+- Removed Zeno's personal files.
+- Added Tiago's images, projects, and articles.
 
 ## Technology stack
 
@@ -18,13 +25,13 @@
 1. Clone this repo:
 
 ```sh
-$ git clone https://github.com/zenorocha/zenorocha.com.git
+$ git clone https://github.com/tiagodgy/tiagogodoy.com
 ```
 
 2. Then go to the project's folder:
 
 ```sh
-cd zenorocha.com
+cd tiagogodoy.com
 ```
 
 3. Install all dependencies:
@@ -54,34 +61,48 @@ The basic file structure for the project is organized in the following way:
 `-- public
 ```
 
-### [articles](https://github.com/zenorocha/zenorocha.com/tree/master/articles)
+### [articles](https://github.com/tiagodgy/tiagogodoy.com/tree/main/articles)
 
 Here you'll find a list of markdown files for each post.
 
-### [components](https://github.com/zenorocha/zenorocha.com/tree/master/components)
+### [components](https://github.com/tiagodgy/tiagogodoy.com/tree/main/components)
 
 Here you'll find reusable blocks of React components.
 
-### [data](https://github.com/zenorocha/zenorocha.com/tree/master/data)
+### [data](https://github.com/tiagodgy/tiagogodoy.com/tree/main/data)
 
 Here you'll find JSON files that populates each section.
 
-### [layouts](https://github.com/zenorocha/zenorocha.com/tree/master/layouts)
+### [layouts](https://github.com/tiagodgy/tiagogodoy.com/tree/main/layouts)
 
 Here you'll find default templates for different pages.
 
-### [lib](https://github.com/zenorocha/zenorocha.com/tree/master/lib)
+### [lib](https://github.com/tiagodgy/tiagogodoy.com/tree/main/lib)
 
 Here you'll find a set of utilities.
 
-### [pages](https://github.com/zenorocha/zenorocha.com/tree/master/pages)
+### [pages](https://github.com/tiagodgy/tiagogodoy.com/tree/main/pages)
 
 Here you'll find all the main pages of the site.
 
-### [public](https://github.com/zenorocha/zenorocha.com/blob/master/public)
+### [public](https://github.com/tiagodgy/tiagogodoy.com/tree/main/public)
 
 Here you'll find all the CSS, images, and font files.
 
-## License
+## Credits
+
+It is important to acknowledge those who dedicate their time and resources to create and provide content for free.
+
+### Zeno Rocha
+
+A special thanks to Zeno Rocha, who made his website available on GitHub under the MIT license. The website tiagogodoy.com is a fork of the zenorocha.com repository, which was used as the technological foundation for all the content.
 
 [MIT License](http://zenorocha.mit-license.org/) © Zeno Rocha
+[Contact](https://zenorocha.com/)
+
+### Loic Norgeot
+
+I thank Loic Norgeot for providing the 3D model of the Earth that is on the homepage. Without a doubt, one of the most amazing models I've found on Sketchfab.
+
+[CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)
+[Contact](https://sketchfab.com/norgeotloic)
