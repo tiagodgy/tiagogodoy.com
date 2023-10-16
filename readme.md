@@ -100,11 +100,11 @@ A special thanks to Zeno Rocha, who made his website available on GitHub under t
 [MIT License](http://zenorocha.mit-license.org/) © Zeno Rocha
 [Contact](https://zenorocha.com/)
 
-### Loic Norgeot
+### Kinga Kroliczek
 
-I thank Loic Norgeot for providing the 3D model of the Earth that is on the homepage. Without a doubt, one of the most amazing models I've found on Sketchfab.
+I thank Kinga Kroliczek for providing the 3D model of the Earth that is on the homepage.
 
-Legal Disclaimer: This work is based on "A Windy Day" (https://sketchfab.com/3d-models/a-windy-day-fb78f4cc938144e6902dd5cff354d525) by Loïc Norgeot (https://sketchfab.com/norgeotloic) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/).
+Legal Disclaimer: This work is based on "Planet Earth" (https://sketchfab.com/3d-models/planet-earth-bce3ea48781c4f02a8c52d2678220d07) by kaede256 (https://sketchfab.com/kaede256) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 
 [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)
-[Contact](https://sketchfab.com/norgeotloic)
+[Contact](https://sketchfab.com/kinga_kroliczek)
