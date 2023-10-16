@@ -1,7 +1,7 @@
 ---
 title: Minhas Notas Sobre Epiteto
 description: Epiteto foi um filósofo grego, pertencente à Escola Estóica, que viveu a maior parte de sua vida como escravo em Roma. 
-image: /static/img/posts/epiteto-scenario.png.jpg
+image: /static/img/posts/epiteto-scenario.png
 date: "2023-10-16"
 ---
 
