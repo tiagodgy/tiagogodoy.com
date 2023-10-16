@@ -1,6 +1,6 @@
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useLoader } from '@react-three/fiber'
-import { Html } from '@react-three/drei'
+import { Html, OrbitControls } from '@react-three/drei'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { Suspense, useRef } from 'react'
 import { styled } from '../stitches.config'
@@ -16,8 +16,14 @@ export default function ModelThree() {
         modelRef.current.rotation.y += 0.002 // Adjust the rotation speed as needed
       }
     })
-
-    return <primitive ref={modelRef} object={gltf.scene} scale={0.5} />
+    return (
+      <primitive
+        ref={modelRef}
+        object={gltf.scene}
+        scale={0.5}
+        rotation={[0, Math.PI / 0.6, 0]}
+      />
+    )
   }
 
   function Loader() {
@@ -34,6 +40,7 @@ export default function ModelThree() {
         <ambientLight />
         <Suspense fallback={<Loader />}>
           <Model />
+          <OrbitControls enableZoom={false} />
         </Suspense>
       </Canvas>
     </Container>
