@@ -2,15 +2,15 @@ import React from 'react'
 import Head from 'next/head'
 import { AnimateSharedLayout } from 'framer-motion'
 import Base from '../layouts/Base'
-import FeaturedProject from '../components/FeaturedProject'
-import { FeaturedProjects } from '../components/FeaturedProjects'
 import stripHtml from '../lib/strip-html'
-import items from '../data/projects'
+import projects from '../data/projects'
+import { styled } from '../stitches.config'
+import Image from 'next/image'
 
 export async function getStaticProps() {
   const meta = {
     title: 'Projetos',
-    tagline: 'Em Breve...',
+    tagline: 'Idealizar. Prototipar. Compartilhar.',
     image: '/static/images/bot-microsoft-sd.jpg',
     primaryColor: 'yellow',
     secondaryColor: 'green',
@@ -20,51 +20,57 @@ export async function getStaticProps() {
 }
 
 function Projetos(props) {
-  const renderFeatured = () => {
-    const featured = ['Dracula PRO', 'Clipboard.js', 'Resend', 'React Email']
+  const { title, image } = props
+  const description =
+    'Possuo diversos projetos pessoais, a maioria gratuito para uso. Talvez aqui você encontre uma ferramenta útil ou uma ideia para se inspirar.'
 
-    return items
-      .map(item => {
-        return item.projects.filter(project => featured.includes(project.title))
-      })
-      .filter(item => {
-        if (item.length > 0) {
-          return item
-        }
-      })
-      .flat()
-      .map((item, index) => {
-        return <FeaturedProject key={index} project={item} />
-      })
-  }
-
-  const renderAll = () => {
-    return items.map((item, index) => {
+  const renderProjects = () => {
+    return projects.map((item, index) => {
       return (
-        <div key={index}>
-          <h3>{item.year}</h3>
-          <ul>
-            {item.projects.map((project, pIndex) => {
-              return <ProjectItem key={pIndex} project={project} />
-            })}
-          </ul>
-        </div>
+        <Container key={index}>
+          <div>
+            <Image
+              src={item.image}
+              alt="Imagem do projeto"
+              width="336"
+              height="336"
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
+              priority
+            />
+          </div>
+          <DataContainer>
+            <h3>
+              {item.title} - {item.year}
+            </h3>
+            <p style={{ textAlign: 'center' }}>{item.description}</p>
+            <LinkContainer>
+              {item.url && (
+                <a href={item.url} target="_blank">
+                  Site
+                </a>
+              )}
+              {item.github && (
+                <a href={item.github} target="_blank">
+                  Github
+                </a>
+              )}
+              {item.playStore && (
+                <a href={item.playStore} target="_blank">
+                  Play Store
+                </a>
+              )}
+              {item.appleStore && (
+                <a href={item.appleStore} target="_blank">
+                  Apple Store
+                </a>
+              )}
+            </LinkContainer>
+          </DataContainer>
+        </Container>
       )
     })
   }
-
-  const getTotalProjects = () => {
-    let total = 0
-
-    for (let i = 0; i < items.length; i++) {
-      total = total + items[i].projects.length
-    }
-
-    return total
-  }
-
-  const { title, image } = props
-  const description = `I'm obsessed with side projects and <strong>building in public</strong>. Here you can navigate to <strong>${getTotalProjects()} different</strong> websites, apps, and libraries I built. Some projects are still active, others have been discontinued.`
 
   return (
     <>
@@ -77,30 +83,35 @@ function Projetos(props) {
         <meta content={`https://tiagogodoy.com${image}`} property="og:image" />
       </Head>
 
-      <AnimateSharedLayout>
-        {/* <p dangerouslySetInnerHTML={{ __html: description }} />
-
-        <h2>Featured Projects</h2>
-        <FeaturedProjects>{renderFeatured()}</FeaturedProjects>
-
-        <h2>All Projects</h2>
-        {renderAll()} */}
-      </AnimateSharedLayout>
+      <AnimateSharedLayout>{renderProjects()}</AnimateSharedLayout>
     </>
   )
 }
+const Container = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginBottom: 20,
+  '@bp2': { width: 800, flexDirection: 'row' },
+})
 
-function ProjectItem(props) {
-  const { project } = props
+const DataContainer = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  '@bp2': { width: 440, padding: 20 },
+})
 
-  return (
-    <li>
-      <a href={project.url} target="_blank">
-        {project.title}
-      </a>
-    </li>
-  )
-}
+const LinkContainer = styled('div', {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'space-evenly',
+  alignItems: 'center',
+  width: 336,
+  '@bp2': { width: 440 },
+})
 
 Projetos.Layout = Base
 
