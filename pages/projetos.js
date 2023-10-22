@@ -43,7 +43,7 @@ function Projetos(props) {
             <h3>
               {item.title} - {item.year}
             </h3>
-            <p style={{ textAlign: 'center' }}>{item.description}</p>
+            <p style={{ textAlign: 'justify' }}>{item.description}</p>
             <LinkContainer>
               {item.url && (
                 <a href={item.url} target="_blank">
