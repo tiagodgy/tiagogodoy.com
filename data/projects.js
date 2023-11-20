@@ -11,6 +11,18 @@ const projects = [
     year: '2023',
     active: true,
   },
+  {
+    title: 'Foca - Block Distracting Websites',
+    description:
+      'Foca é um aplicativo gratuito projetado para ajudar você a eliminar distrações de sites. Além do recurso convencional de bloqueio de sites encontrado em muitas outras extensões, o Foca introduz um modo inovador chamado "Foco nos Estudos". Esse modo exclusivo permite que os usuários bloqueiem tudo, exceto o site designado para estudo, proporcionando um ambiente ideal para aprendizado concentrado e ininterrupto.',
+    image: '/static/img/projects/foca_extension.png',
+    url: 'https://chromewebstore.google.com/',
+    github: '',
+    playStore: '',
+    appleStore: '',
+    year: '2023',
+    active: true,
+  },
 ]
 
 export default projects
