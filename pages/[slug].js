@@ -66,7 +66,7 @@ export async function getStaticProps({ params }) {
     const isProd = process.env.NODE_ENV === 'production'
     const base = isProd ? 'https://tiagogodoy.com' : 'http://localhost:3000'
 
-    if (isProd) {
+    if (false) {
       const viewsReq = await fetch(`${base}/api/views/${params.slug}`)
       const viewsRes = await viewsReq.json()
 
