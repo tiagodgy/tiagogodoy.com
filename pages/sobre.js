@@ -15,7 +15,7 @@ export async function getStaticProps() {
     description:
       'Meu nome é Tiago Godoy, iniciei minha carreira trabalhando como desenvolvedor de software na SmartGateway. Atualmente sou estagiário de Engenharia de Software e graduando em Defesa Cibernética na Faculdade XPe.',
     tagline: 'Sonho Grande. Mente Aberta.',
-    image: '/static/images/expert-xp.jpg',
+    image: '/static/images/csun-library.jpg',
     primaryColor: 'yellow',
     secondaryColor: 'pink',
   }
@@ -35,7 +35,7 @@ function Sobre(props) {
         <Section>
           <Image
             alt="Tiago"
-            src="/static/images/expert-xp.jpg"
+            src="/static/images/csun-library.jpg"
             width="336"
             height="336"
             placeholder="blur"
@@ -50,23 +50,20 @@ function Sobre(props) {
               '@bp2': { marginTop: '-6px' },
             }}
           >
-            <strong>Olá, eu sou Tiago Godoy.</strong> Iniciei minha carreira
-            trabalhando como desenvolvedor de software na SmartGateway.
-            Atualmente sou estagiário de Engenharia de Software e graduando em
-            Defesa Cibernética na Faculdade XPe, tendo sido o{' '}
-            <strong>segundo</strong> colocado no processo seletivo com{' '}
-            <strong>127 mil participantes</strong>.
+            <strong>Olá, meu nome é Tiago Godoy</strong>, e minha jornada
+            profissional tem sido marcada por experiências significativas.
+            Iniciei minha carreira como desenvolvedor de software na
+            SmartGateway, e atualmente, sou estagiário em Engenharia de
+            Software, enquanto busco minha graduação em Defesa Cibernética na
+            Faculdade XPe.
           </Paragraph>
           <Paragraph>
-            <strong>Sonho Grande. Mente Aberta. Espírito Empreendedor.</strong>{' '}
-            Esses são os valores da Faculdade XPe que adotei e sempre os levarei
-            comigo. Sonhar pequeno e grande requer o mesmo esforço,{' '}
-            <strong>Sonhe Grande</strong>.
-          </Paragraph>
-          <Paragraph>
-            <strong>No meu tempo livre</strong> eu gosto de trabalhar em
-            projetos pessoais, ir na academia, andar de bicicleta, assistir
-            filmes e jogar video-game.
+            Em 2024, tive a oportunidade incrível de participar de um curso
+            executivo na <strong>Califórnia State University</strong>, focado em
+            Digital Companies & E-Business Revolution. Durante esse período,
+            tive acesso a profissionais experientes nas áreas de Data Analytics,{' '}
+            <strong>Cibersegurança</strong>, Inteligência Artificial,
+            Empreendedorismo voltado a Startups e Marketing.
           </Paragraph>
         </Section>
       </Container>
