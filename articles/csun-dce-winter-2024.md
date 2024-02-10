@@ -1,5 +1,5 @@
 ---
-title: O que aprendi na California State Univesity 
+title: O que aprendi na California State University 
 description: Um breve relato sobre meus 30 dias em Los Angeles realizando o curso executivo com foco em digital business na CSUN.  
 image: /static/img/posts/csun-turma-dce.jpg
 date: "2024-02-10"
