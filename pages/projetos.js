@@ -45,24 +45,24 @@ function Projetos(props) {
             </h3>
             <p style={{ textAlign: 'justify' }}>{item.description}</p>
             <LinkContainer>
-              {item.url && (
-                <a href={item.url} target="_blank">
-                  Site
+              {item.link1 && (
+                <a href={item.link1} target="_blank">
+                  {item.description1}
                 </a>
               )}
-              {item.github && (
-                <a href={item.github} target="_blank">
-                  Github
+              {item.link2 && (
+                <a href={item.link2} target="_blank">
+                  {item.description2}
                 </a>
               )}
-              {item.playStore && (
-                <a href={item.playStore} target="_blank">
-                  Play Store
+              {item.link3 && (
+                <a href={item.link3} target="_blank">
+                  {item.description3}
                 </a>
               )}
-              {item.appleStore && (
-                <a href={item.appleStore} target="_blank">
-                  Apple Store
+              {item.link4 && (
+                <a href={item.link4} target="_blank">
+                  {item.description4}
                 </a>
               )}
             </LinkContainer>

@@ -11,8 +11,8 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Tiago Godoy',
-      description: 'Transformando ideias em produtos',
-      image: '/static/images/expert-xp.jpg',
+      description: 'Protejendo o Seu Negócio Contra Ameaças Cibernéticas',
+      image: '/static/images/csun-library.jpg',
     },
   }
 }
@@ -36,7 +36,7 @@ export default function Index(props) {
           <PostContainer>
             <h1>{title}</h1>
             <p>
-              <strong>Cibersegurança & Eng. de Software</strong>
+              <strong>Cybersecurity Engineer</strong>
               <br />
               {description}
             </p>

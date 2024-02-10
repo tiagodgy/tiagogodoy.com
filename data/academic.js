@@ -1,5 +1,13 @@
 const academic = [
   {
+    jobTitle: 'Executive Program, Digital Companies & E-Business Revolution',
+    company: 'California State University, Northridge',
+    companyUrl: '',
+    startDate: '2023-12-31',
+    endDate: '2024-01-31',
+    location: 'Los Angeles, California, United States',
+  },
+  {
     jobTitle: 'Tecnólogo em Defesa Cibernética',
     company: 'Faculdade XPe',
     companyUrl: '',
