@@ -21,8 +21,8 @@ export async function getStaticProps() {
   ]
 
   const featuredPosts = [
+    getPostBySlug('csun-dce-winter-2024', featuredParams),
     getPostBySlug('melhores-extensoes-2024', featuredParams),
-    getPostBySlug('stable-diffusion-qrcode', featuredParams),
   ]
 
   return {
