@@ -66,11 +66,37 @@ As etapas para desenvolver nossa Startup foram:
 <figure>
   <img src="/static/img/posts/csun-week2-team.jpeg" alt="Equipe da Week 2">
 </figure>
-Legenda: Uniplan.AI, composta por Abhinav Prasanth, Tiago Godoy (Eu), Andreia Paiva, Marcos Reis.
+Legenda: Uniplan.AI; Composta por Abhinav Prasanth, Tiago Godoy (Eu), Andreia Paiva, Marcos Reis.
 
 
 ## Terceira Semana
 
+"Disruption in the Hi-Tech Environment" foi o tópico da terceira semana. Brian Frankel, especialista em marketing internacional, foi o responsável por nos guiar.
+
+Em questão de conteúdo técnico, foi a semana mais proveitosa. Brian mostrou em detalhes para nós como criar uma campanha de marketing fenomenal utilizando estratégias simples. Também detalhou como ele levou alguns de seus clientes de um faturamento próximo de 0 até U$ 10 milhões anuais, apenas com marketing digital.
+
+Ao final do curso, deveríamos criar uma campanha de marketing para um produto que nos foi sorteado. No caso da minha equipe, deveríamos vender ingressos para um Zoológico Virtual.
+
+- Primeiro, determinamos o nosso Value proposition: O que um Zoológico Virtual traz para nossos clientes.
+- Definimos o nosso mercado consumidor: Quais são as características de nossos clientes.
+- Value Proposition - Desire Fit: Como os desejos dos nossos consumidores são supridos com a nossa proposta de valor.
+- Customer Purchase Process (CCP): Qual o caminho nosso cliente fará até terminar sua experiência no Zoológico Virtual.
+- Criamos o funil de vendas.
+- Utilizamos Search Ads para determinar as melhores palavras-chave.
+- Criamos uma landing page utilizando Figma.
+- Criamos um mecanismo de captura de emails e geramos uma lista de emails que serão enviados estrategicamente após o cadastro.
+- Para boa visibilidade, criamos uma Ladder que contém as Funcionalidades / Atributos do nosso produto, os Benefícios gerados, as Consequências e os Valores Emocionais explorados.
+- Estudamos uma estratégia para aumentar o valor de conversão, em nosso caso, criar promoções para compra de mais ingressos para família.
+- Estudamos a possibilidade de Parcerias Estratégicas como escolas para venda de nosso produto.
+- Desenvolvemos uma expectativa de métricas que vamos analisar. 
+<figure>
+  <img src="/static/img/posts/csun-week3-class.jpg" alt="Foto em turma da terceira semana">
+</figure>
+Legenda: Foto da turma da terceira semana junto a Brian Frankel. 
+
+## Conclusão
+
+Embora participar de um curso executivo fora do país, especialmente em uma cidade cara como Los Angeles, envolva altos custos, posso afirmar que cada segundo e cada centavo gastos valeram a pena. Esta experiência única na vida gerou ganhos inestimáveis, como novas amizades, oportunidades de networking com profissionais de diversas nacionalidades e uma perspectiva renovada. Na Califórnia, não importa quão surreal seja seu sonho, tudo é possível.
 
 
 
