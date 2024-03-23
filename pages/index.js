@@ -36,7 +36,7 @@ export default function Index(props) {
           <PostContainer>
             <h1>{title}</h1>
             <p>
-              <strong>Consultor de Engenharia de Software</strong>
+              <strong>Engenharia de Software & Cybersecurity</strong>
               <br />
               {description}
             </p>

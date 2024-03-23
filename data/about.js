@@ -1,6 +1,6 @@
 const items = [
   {
-    jobTitle: 'Consultor Autônomo',
+    jobTitle: 'Consultor de desenvolvimento de produtos',
     company: 'TGY Equipamentos',
     companyUrl: '',
     startDate: '2020-06-22',
@@ -10,7 +10,8 @@ const items = [
     jobTitle: 'Estagiário Engenharia de Software',
     company: 'Brasilata',
     companyUrl: 'https://www.brasilata.com.br/',
-    startDate: '2023-05-01',
+    startDate: '2023-04-15',
+    endDate: '2024-04-15',
     location: 'São Paulo, Brasil',
   },
   {
