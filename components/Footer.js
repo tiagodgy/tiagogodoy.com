@@ -22,6 +22,11 @@ export default function Footer() {
       url: 'https://www.youtube.com/channel/UCz383XOzCyl6bIeHCtjFPSQ',
       icon: 'ri-youtube-line',
     },
+    {
+      title: 'Créditos',
+      url: '/creditos',
+      icon: 'ri-award-line',
+    },
   ]
 
   const renderAnchor = (link, index) => {

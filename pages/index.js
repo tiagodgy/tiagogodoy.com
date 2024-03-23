@@ -5,13 +5,13 @@ import Footer from '../components/Footer'
 import ShortcutHome from '../components/ShortcutHome'
 import { PostMain, PostContent, PostContainer } from '../components/Post'
 import { Wrapper } from '../components/Wrapper'
-import ModelThree from '../components/ModelThree'
+import Image from 'next/image'
 
 export async function getStaticProps() {
   return {
     props: {
       title: 'Tiago Godoy',
-      description: 'Protejendo o Seu Negócio Contra Ameaças Cibernéticas',
+      description: 'Transformando ideias em produtos seguros e escaláveis',
       image: '/static/images/csun-library.jpg',
     },
   }
@@ -36,14 +36,24 @@ export default function Index(props) {
           <PostContainer>
             <h1>{title}</h1>
             <p>
-              <strong>Cybersecurity Engineer</strong>
+              <strong>Consultor de Engenharia de Software</strong>
               <br />
               {description}
             </p>
             <ShortcutHome />
           </PostContainer>
         </PostContent>
-        <ModelThree />
+        <div>
+          <Image
+            src="/static/images/tiago-csun-front.png"
+            alt="Foto Tiago na Csun"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
+            priority
+            width={350}
+            height={350}
+          />
+        </div>
       </Home>
       <Footer />
     </Wrapper>
@@ -54,7 +64,13 @@ const Home = styled(PostMain, {
   alignItems: 'center',
   display: 'flex',
   margin: '0 auto',
+  textAlign: 'center',
   flexDirection: 'column',
-  '@bp2': { width: 800, flexDirection: 'row', paddingBottom: '0' },
+  '@bp2': {
+    width: 800,
+    flexDirection: 'row',
+    paddingBottom: '0',
+    textAlign: 'start',
+  },
   paddingBottom: '0',
 })

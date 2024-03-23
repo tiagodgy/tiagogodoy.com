@@ -1,5 +1,12 @@
 const items = [
   {
+    jobTitle: 'Consultor Autônomo',
+    company: 'TGY Equipamentos',
+    companyUrl: 'https://www.brasilata.com.br/',
+    startDate: '2020-06-22',
+    location: 'São Paulo, Brasil',
+  },
+  {
     jobTitle: 'Estagiário Engenharia de Software',
     company: 'Brasilata',
     companyUrl: 'https://www.brasilata.com.br/',
@@ -9,7 +16,7 @@ const items = [
   {
     jobTitle: 'Desenvolvedor C# & Python',
     company: 'SmartGateway',
-    companyUrl: 'https://smartgateway.com.br/',
+    companyUrl: 'https://apps.apple.com/br/app/smartgateway/id1534645216',
     startDate: '2021-08-01',
     endDate: '2022-08-31',
     location: 'São Paulo, Brasil',

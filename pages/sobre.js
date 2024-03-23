@@ -13,8 +13,8 @@ export async function getStaticProps() {
   const meta = {
     title: 'Sobre Tiago Godoy',
     description:
-      'Meu nome é Tiago Godoy, iniciei minha carreira trabalhando como desenvolvedor de software na SmartGateway. Atualmente sou estagiário de Engenharia de Software e graduando em Defesa Cibernética na Faculdade XPe.',
-    tagline: 'Sonho Grande. Mente Aberta.',
+      'Conheça o Tiago Godoy. Consultor em engenharia, desenvolvimento e segurança de software.',
+    tagline: 'Conheça o Tiago Godoy.',
     image: '/static/images/csun-library.jpg',
     primaryColor: 'yellow',
     secondaryColor: 'pink',
@@ -50,20 +50,15 @@ function Sobre(props) {
               '@bp2': { marginTop: '-6px' },
             }}
           >
-            <strong>Olá, meu nome é Tiago Godoy</strong>, e minha jornada
-            profissional tem sido marcada por experiências significativas.
-            Iniciei minha carreira como desenvolvedor de software na
-            SmartGateway, e atualmente, sou estagiário em Engenharia de
-            Software, enquanto busco minha graduação em Defesa Cibernética na
-            Faculdade XPe.
+            Consultor de desenvolvimento, engenharia e segurança de software,
+            auxiliando empresas tornarem suas{' '}
+            <strong>ideias em produtos rentáveis</strong>. Inclui em seu
+            portifólio empresas como Brasilata, SmartGateway e UPX Solution.
           </Paragraph>
           <Paragraph>
-            Em 2024, tive a oportunidade incrível de participar de um curso
-            executivo na <strong>Califórnia State University</strong>, focado em
-            Digital Companies & E-Business Revolution. Durante esse período,
-            tive acesso a profissionais experientes nas áreas de Data Analytics,{' '}
-            <strong>Cibersegurança</strong>, Inteligência Artificial,
-            Empreendedorismo voltado a Startups e Marketing.
+            Em 2020, fundou a <strong>TGY Equipamentos</strong>, empresa focada
+            no desenvolvimento e comércio de produtos físicos e digitais para
+            B2C e SMB.
           </Paragraph>
         </Section>
       </Container>
@@ -107,17 +102,6 @@ function Sobre(props) {
               {item.company}
             </a>
             <span> • {item.location}</span>
-          </p>
-          <p style={{ margin: 0 }}>
-            <span>{format(parseISO(item.startDate), 'LLL yyyy')}</span>
-            <span> – </span>
-            <span>
-              {item.endDate
-                ? format(parseISO(item.endDate), 'LLL yyyy')
-                : 'Present'}
-            </span>
-            <span> • </span>
-            <span>{getDuration(item.startDate, item.endDate)}</span>
           </p>
         </div>
       )
