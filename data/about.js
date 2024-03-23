@@ -2,7 +2,7 @@ const items = [
   {
     jobTitle: 'Consultor Autônomo',
     company: 'TGY Equipamentos',
-    companyUrl: 'https://www.brasilata.com.br/',
+    companyUrl: '',
     startDate: '2020-06-22',
     location: 'São Paulo, Brasil',
   },
