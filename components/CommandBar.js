@@ -120,23 +120,6 @@ export default function CommandBar(props) {
       ),
     },
     {
-      id: 'about',
-      name: 'Sobre',
-      shortcut: ['g', 's'],
-      keywords: 'go-about',
-      section: 'Go To',
-      perform: () => router.push('/sobre'),
-      icon: (
-        <Lottie
-          lottieRef={aboutRef}
-          style={iconSize}
-          animationData={aboutIcon}
-          loop={false}
-          autoplay={false}
-        />
-      ),
-    },
-    {
       id: 'articles',
       name: 'Artigos',
       shortcut: ['g', 'a'],
